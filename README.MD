@@ -1,5 +1,5 @@
  ## multissh
-
+参考：https://github.com/shanghai-edu/multissh
 一个简单的并行 SSH 工具，可以批量的对主机通过 SSH 执行命令组合。
 
 支持：
@@ -305,6 +305,19 @@ oauth2-demo-php
 oauth2-server-php
 python_test
 rsyslog-maxminddb
+```
+####加了一个交互操作的
+```
+go run main.go -I -hosts "192.168.0.130" -u test -p passwd                
+2020/04/08 10:15:05 Multissh start
+Last login: Tue Apr  7 17:45:44 2020 from 192.168.0.102
+[test@localhost ~]$
+[test@localhost ~]$
+[test@localhost ~]$
+[test@localhost ~]$ ls
+[test@localhost ~]$ pwd
+/home/test
+[test@localhost ~]$
 ```
 
 #### LICENSE
